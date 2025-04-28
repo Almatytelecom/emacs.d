@@ -1,0 +1,1 @@
+("~/" "~/repos/linux-tips/" "~/repos/easy-rsa/" "~/repos/openvpn/" "~/repos/openssl/")

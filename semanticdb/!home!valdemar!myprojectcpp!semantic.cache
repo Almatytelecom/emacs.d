@@ -1,0 +1,22 @@
+;; Object semanticdb-project-database-file-1591f0cdaa5c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1591f0cdaa5c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1591f0cda9a0"
+      :major-mode c++-mode
+      :tags 
+        '( ("conio.h" include (:system-flag t) nil [17 35])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [46 51]))                  
+                :type "int")
+                nil [36 345]))          
+      :file "asyl.cpp"
+      :pointmax 346
+      :fsize 348
+      :lastmodtime '(26029 53343 107475 456000)
+      :unmatched-syntax nil))
+  :file "!home!valdemar!myprojectcpp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

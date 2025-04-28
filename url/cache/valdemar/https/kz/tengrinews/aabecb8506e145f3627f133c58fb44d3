@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 15 Nov 2024 06:45:14 GMT
+Content-Type: image/svg+xml
+Content-Length: 295
+Last-Modified: Sat, 03 Feb 2024 16:32:57 GMT
+Connection: keep-alive
+ETag: "65be6ab9-127"
+Expires: Thu, 31 Dec 2037 23:55:55 GMT
+Cache-Control: max-age=315360000
+Pragma: public
+Access-Control-Allow-Origin: *
+Cache-Control: public, must-revalidate, proxy-revalidate
+Accept-Ranges: bytes
+
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.205 18.9546C11.6778 18.4274 11.6778 17.5726 12.205 17.0454L22.5004 6.75L24.0754 8.325L14.4004 18L24.0754 27.675L22.5004 29.25L12.205 18.9546Z" fill="#292D39" fill-opacity="0.3"/>
+</svg>

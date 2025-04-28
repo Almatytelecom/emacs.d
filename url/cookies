@@ -1,0 +1,15 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ '(("tengrinews.kz"
+  [url-cookie "XSRF-TOKEN" "eyJpdiI6IkllbUVxSlc5SmpoUVNQMkVzbUlkdnc9PSIsInZhbHVlIjoiYWFDZ0pKc3Nrd0lESkFGSFREaG1ua25senFZZk94V3FJR3hsOFAwbjhveEZHc09rQ1BrZnJkZkpIRHE0ZmFSaVZtUDdORk9cL0dsM2cyZUJWSG9UXC8rXC82VWFTZkVZM1lXYnFQWG1EUHlRSHl5WnU0Y1RCNERpcHFMbWh6K2dkUjYiLCJtYWMiOiJlZDZlMTc0OWI5YzY4OTA2NWQ3ZWI5YzQ1NGFlNjE2MWY1N2U5ZDEzNWVjMzVlOWZlNDZkMDZhZmViM2I4NzM2In0%3D" "Sat Nov 16 02:23:09 2024 GMT" "/" "tengrinews.kz" nil]
+  [url-cookie "srv7_session" "eyJpdiI6IlwvVzI5c1lDeEhtSFlLa1RZSzRJd2JnPT0iLCJ2YWx1ZSI6ImUwZkdpQmIrNmlqWXRzYm5YWVwvd21PVXRNYktPZ3ZIc2luSmQ1Rmg1VnFRa3JjZUZ0SkhvSzVZZmZGK1A1VFlOaE1vZHg5S3lcLzE3eTVLOGFuQUR5ZXZ6clN0QkVqYVBFXC8weEpFM0ZOb2dqOXNlUEVpaExodGJiNzFkYXM4T3NRIiwibWFjIjoiNjUxMWY2ZWQzOGJmZjBkNTg3ODBhYjQzMTAzNTY4NTMwOTZiMGZiMzM0Njc2NmRlYjBlN2M4OGZjMDdmZTU4YiJ9" "Sat Nov 16 02:23:09 2024 GMT" "/" "tengrinews.kz" nil]))
+)
+(setq url-cookie-secure-storage
+ 'nil)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; End:
