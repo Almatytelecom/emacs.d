@@ -1,0 +1,10 @@
+Loading /etc/emacs/site-start.d/00debian.el (source)...done
+Importing package-keyring.gpg...done
+Contacting host: melpa.org:443 [2 times]
+Contacting host: elpa.gnu.org:443
+Entering debugger...
+funcall-interactively: Buffer is read-only: #<buffer *Backtrace*>
+scroll-down-command: Beginning of buffer [4 times]
+funcall-interactively: Text is read-only
+delete-backward-char: Beginning of buffer
+delete-backward-char: Text is read-only [13 times]
