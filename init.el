@@ -21,18 +21,18 @@
 
 ;;instruments
 
-(require 'tools-lsp)
-(require 'tools-magit)
+;(require 'tools-lsp)
+;(require 'tools-magit)
 
 
 ;;languages
 
-(require 'lang-cpp)
-(require 'lang-python)
+;(require 'lang-cpp)
+;(require 'lang-python)
 
 
 
 ;; ready
 
-(message "emacs succesfully loaded by init.el"
+(message "emacs succesfully loaded by init.el")
 
