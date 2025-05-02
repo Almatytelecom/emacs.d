@@ -20,7 +20,7 @@
   (lsp-enable-indentation t)
   (lsp-semantic-tokens-enable t)
   :config
-  (lsp-enable-which-key-intergration t))
+  (lsp-enable-which-key-integration t))
 
 
 

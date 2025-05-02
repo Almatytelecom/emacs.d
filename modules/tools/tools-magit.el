@@ -44,4 +44,4 @@
 
 
 ;; Provide the feature
-(provide 'tools-magit
+(provide 'tools-magit)
