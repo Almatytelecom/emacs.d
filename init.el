@@ -2,9 +2,9 @@
 ;;config paths
 
 (add-to-list 'load-path (expand-file-name "modules" user-emacs-directory))
-;(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 (let (( default-directory (expand-file-name "modules" user-emacs-directory)))(normal-top-level-add-subdirs-to-load-path))
-;(let (( default-directory (expand-file-name "lisp" user-emacs-directory)))(normal-top-level-add-subdirs-to-load-path))
+(let (( default-directory (expand-file-name "lisp" user-emacs-directory)))(normal-top-level-add-subdirs-to-load-path))
 
 
 ;;initialization system of packets
@@ -21,13 +21,13 @@
 
 ;;instruments
 
-;(require 'tools-lsp)
-;(require 'tools-magit)
+(require 'tools-lsp)
+(require 'tools-magit)
 
 
 ;;languages
 
-;(require 'lang-cpp)
+(require 'lang-cpp)
 ;(require 'lang-python)
 
 

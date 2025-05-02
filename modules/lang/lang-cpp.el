@@ -55,6 +55,7 @@
   :ensure nil
   :custom
   (compilation-scroll-output t)
+  (compilation-window-height 15)
   :config
   (global-set-key (kbd "C-c c") 'compile))
 
@@ -115,6 +116,15 @@
 	    (lambda ()
 	      (add-hook 'after-save-hook
 			'counsel-etags-virtual-update-tags 'append 'local))))
+
+
+
+
+;; Global settings
+(global-set-key (kbd "C-c o") 'ff-find-other-file)
+(electric-pair-mode 1)
+(show-paren-mode 1)
+(add-hook 'progmode-hook 'display-line-numbers-mode)
 
 
 
