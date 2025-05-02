@@ -1,0 +1,70 @@
+;;; .emacs ---
+
+;;; Commentary:
+;; 
+
+(require 'package)
+;;; Code:
+
+(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")("melpa" . "https://melpa.org/packages/")))
+(package-initialize)
+(unless (package-installed-p 'emmet-mode)
+  (package-refresh-contents)
+  (package-install 'emmet-mode))
+(add-hook 'sgml-mode-hook 'emmet-mode)
+(add-hook 'html-mode-hook 'emmet-mode)
+(add-hook 'css-mode-hook 'emmet-mode)
+;(unless (package-installed-p 'php-mode)
+ ; (package-refresh-contents)
+  ;(package-install 'php-mode)
+  ;(add-hook 'php-mode-hook 'emmet-mode)
+(custom-set-variables
+
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages '(emmet-mode)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+(provide '.emacs)
+;;For my cpp project different directory
+(setq cpp-directory "/home/valdemar/myprojectcpp/")
+
+(defun set-compile-directory ()
+  (setq compile-command (concat "cd " cpp-directory " && g++ -c " (buffer-file-name) " -o"
+				(file-name-sans-extension (buffer-file-name)) ".o"
+				" && g++ "(file-name-sans-extension (buffer-file-name)) ".o -o "
+				          (file-name-sans-extension (buffer-file-name)))))
+
+(add-hook 'c++-mode-hook 'set-compile-directory)
+(add-hook 'c-mode-hook 'set-compile-directrory)
+(add-hook 'before-save-hook 'set-compile-directory)
+;;; .emacs ends here
+
+;;add by valdemar 
+(require 'company)
+(add-hook 'after-init-hook 'global-company-mode)
+
+(require 'flycheck)
+(add-hook 'c++-mode-hook 'flycheck-mode)
+
+(setq c-default-style "linux"
+	c-basic-offset 4)
+(defun my-c++-mode-hook()
+	(setq indent-tabs-mode nil)
+	(setq c-basic-offset 4))
+(add-hook 'c++-mode-hook 'my-c++-mode-hook)
+
+(require 'projectile)
+(projectile-mode +1)
+
+
+
+(global-set-key (kbd "C-c <right>") 'org-do-demote)
+(global-set-key (kbd "C-c <left>") 'org-do-promote)
